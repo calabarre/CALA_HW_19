@@ -409,13 +409,12 @@ li {
     }
 }
 
-
 .studio-button-label {
 
     text-transform: lowercase;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     white-space: nowrap;
-    transform: translateX(20px);
+    transform: translateX(0);
     transition: 0.25s ease all;
     padding: 0 8px;
 }
@@ -423,9 +422,9 @@ li {
 .project-text {
     padding: 10px;
 }
+
 .hover-overlay {
     position: absolute;
-    position
     top: 0;
     bottom: 0;
     left: 0;
