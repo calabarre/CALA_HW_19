@@ -10,12 +10,15 @@
     <script defer src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-
+<body>
 <!-- navigation -->
 <nav>
+
+    <!-- mega menu -->
+    
     <div class="header">
         <button class="nav-button">index ↓</button>
-
+          
         <ul>
             <li><a href="#home">home,</a></li>
             <li><a href="#about">about,</a></li>
@@ -32,6 +35,7 @@
 </nav>
 
 <!-- introduction -->
+
 <section>
     <div class="hero-section">
         <div class="intro-box">
@@ -58,16 +62,18 @@
                             <em> <sup class="italic">(3)</sup></em> oh.. and i just really like design and tech
                             <br>
                             <br>
-                            <button class="about-button">about me</button>
+                            <a href="#smoothtoaboutme">about me</a>
                         </small></h3>
             </div>
+           
         </div>
 </section>
 
 <!-- intro pt 2  -->
 
 <section>
-    <div class="introductionpt2">
+    
+    <div class="introductionpt2" id="smoothtoaboutme">
 
         <div class="profilepic">
             <img src="images/cala.png" alt="cala" style="height: 300px">
@@ -149,15 +155,17 @@
             <!-- 1 -->
             <div class="container">
                 <p class="label">the architectural design process</p>
-                <div class="content">Iterations are imperative for architects, rolls of crossed out parchment paper makes for one
-                        solid design and or idea. Iterations are apart of every design phase. This is how I was trained
-                        to think, and was expected to come to studio with 6 different iterations of the same idea.
-                        <br>
-                        <br>
-                        I personally like to think a design is never finished.. and thats what makes ux design
-                        brilliant, the ability to constantly change, improve and iterate in real time. buildings can be
-                        edited with years of lead time. designing and executing through figma and coding... sounds more
-                        feasible to me </small></div>
+                <div class="content">Iterations are imperative for architects, rolls of crossed out parchment paper
+                    makes for one
+                    solid design and or idea. Iterations are apart of every design phase. This is how I was trained
+                    to think, and was expected to come to studio with 6 different iterations of the same idea.
+                    <br>
+                    <br>
+                    I personally like to think a design is never finished.. and thats what makes ux design
+                    brilliant, the ability to constantly change, improve and iterate in real time. buildings can be
+                    edited with years of lead time. designing and executing through figma and coding... sounds more
+                    feasible to me </small>
+                </div>
             </div>
             <hr>
 
@@ -171,7 +179,8 @@
             <!-- 3 -->
             <div class="container">
                 <p class="label">design, design, design!</p>
-                <div class="content"> <small>As an architect, we build physical spaces. As a UX/UI designer, we build digital spaces.
+                <div class="content"> <small>As an architect, we build physical spaces. As a UX/UI designer, we build
+                        digital spaces.
                         both with a common denominator of create spacial experiences for users. Goes as follows:
                         understand your target user and listen to them which inevitably creates a vision around their
                         needs.
@@ -222,46 +231,16 @@
 
 
 <!-- projects -->
+<div class="project-head">
+    <h1> selected works</h1>
+    <button class="gen-button">view all projects</button>
+</div>
 
 <section class="selected-works">
-    <div class="project-head">
-        <h1> selected works</h1>
-        <button class="gen-button">view all projects</button>
-    </div>
 
     <div class="projects">
+
         <!-- 1 -->
-        <div class="project-card">
-            <div class="textandimage">
-                <div class="box-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="#992526"
-                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
-                    </svg>
-                </div>
-
-                <div class="box-label">
-                    <p>design innovation</p>
-                </div>
-
-                <h3 div class="project-title">auspost lgbtqia+ framework</h3>
-                <div class="project-image">
-                    <img src="images/auspostmockup.png" alt="ausposthero">
-                    <div class="project-text">
-                        <p> <small>Using ux user research and AUSPOST neighbourhood welcoming service as a building
-                                block to
-                                create immersive and educated communities</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="studio-button">
-
-                <div class="studio-button-label">view the design process</div>
-            </div>
-        </div>
-
-
-        <!-- 2 -->
         <div class="project-card">
             <div class="textandimage">
                 <div class="box-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
@@ -286,11 +265,42 @@
                 </div>
             </div>
 
-            <div class="studio-button">
-                <div <div class="studio-button-label">view the design process</div>
+            <div class="hover-overlay">
+                <div class="hover-text">view the design process</div>
             </div>
-        </div>
 
+        </div>
+        <!-- 2 -->
+ <div class="project-card">
+            <div class="textandimage">
+                <div class="box-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#992526"
+                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                    </svg>
+                </div>
+
+                <div class="box-label">
+                    <p>user experience design</p>
+                </div>
+
+                <h3 div class="project-title">health.gov.au redesign</h3>
+                <div class="project-image">
+                    <img src="images/auspostmockup.png" alt="auspost">
+                    <div class="project-text">
+                        <p> <small>Using ux user research and AUSPOST neighbourhood welcoming service as a building
+                                block to
+                                create immersive and educated communities</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hover-overlay">
+                <div class="hover-text">view the design process</div>
+            </div>
+
+        </div>
+        <!-- 3 -->
         <div class="project-card">
             <div class="textandimage">
                 <div class="box-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
@@ -304,23 +314,24 @@
                     <p>user experience design</p>
                 </div>
 
-                <h3 div class="project-title">vagabond club</h3>
+                <h3 div class="project-title">health.gov.au redesign</h3>
                 <div class="project-image">
                     <img src="images/auspostmockup.png" alt="ausposthero">
                     <div class="project-text">
-                        <p> <small>Imagine a community and program that helps you maximize your productivity as a remote
-                                worker. An app that helps remote workers find places to stay and places to sit and work
-                                while they’re travelling that are suitable to their needs.</small></p>
+                        <p> <small>Using ux user research and AUSPOST neighbourhood welcoming service as a building
+                                block to
+                                create immersive and educated communities</small></p>
                     </div>
                 </div>
             </div>
 
-            <div class="studio-button">
-
-                <div class="studio-button-label">view the design process</div>
+            <div class="hover-overlay">
+                <div class="hover-text">view the design process</div>
             </div>
+
         </div>
 
+    </div>
 
 </section>
 
@@ -448,6 +459,6 @@
 </section>
 
 
-</body>
 
+</body>
 </html>
