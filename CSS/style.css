@@ -6,7 +6,7 @@
 /* text-font + size */
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 h1 {
@@ -135,18 +135,93 @@ li {
     outline: inherit;
 }
 
-.nav-button {
+/* nav-button {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     background: none;
     color: #992626;
     border: none;
     padding: 0;
-    cursor: pointer;
-    outline: inherit;
-}
+    
+} */
 
 /* mega menu */
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background: none;
+    color: #992626;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+    outline: inherit;
+
+    
+}
+.megamenu-arrow {
+color: #fff;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+
+    opacity: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   background-color: #992626;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.megamenu-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.megamenu-column {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.megamenu-button {
+    margin: 50px auto 40px auto;
+    height: 35px;
+    width: 60px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background-color: #992626;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 13px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: inherit;
+}
 /* introduction */
 
 .big-icon {
@@ -231,24 +306,29 @@ li {
 }
 
 .profilepic {
-    align-items: left;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0px auto;
     padding: 20px;
 }
 
 /* summary */
 
 .summary-accordion {
-
+    display: grid;
+    width: 100%;
+    justify-content: center;
     margin: 90px auto;
     color: black;
     background-color: white;
 
 }
+.accordion {
+    
+    width: 100%;
+}
 
 .summary-accordion .container {
     position: relative;
+    width: 100%;
     margin: 10px 10px;
 }
 
@@ -257,7 +337,7 @@ li {
 .accordion .label {
     position: relative;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 15px;
     color: black;
     cursor: pointer;
 }
@@ -278,13 +358,14 @@ li {
 
 .summary-accordion .content {
     position: relative;
+   
     background: white;
     height: 0;
     font-size: 15px;
-
+    margin: 0px 20px;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     text-align: justify;
-    width: 780px;
+    
     overflow: hidden;
     transition: 0.5s;
 }
@@ -292,7 +373,7 @@ li {
 /* Adds a horizontal line between the contents */
 
 .summary-accordion hr {
-    width: 100;
+    width: 100%;
     margin-left: 0;
     border: 0.5px solid #992626;
 }
@@ -426,27 +507,27 @@ li {
 .hover-overlay {
     position: absolute;
     top: 0 !important;
-    bottom: 0 !important ;
+    bottom: 0 !important;
     left: 0 !important;
     right: 0 !important;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #992626;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #992626;
 }
 
 .project-card:hover .hover-overlay {
     opacity: 0.5;
     transform: translate3D(0, -1px, 0) scale(1.03);
     margin: 0 !important;
-  }
+}
 
 .hover-text {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     color: pink;
     font-size: 20px;
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -461,7 +542,7 @@ li {
 
     transform: translate3D(0, -1px, 0) scale(1.03);
     opacity: 1;
-    
+
 
 }
 
@@ -593,7 +674,7 @@ footer {
     .project-head {
         position: sticky;
         top: 0;
-        background-color: #992626;
+    
     }
 
     .selected-works {
@@ -611,6 +692,11 @@ footer {
         text-align: center;
     }
 
+    .summary-accordion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -621,7 +707,7 @@ footer {
 .verticalLine {
     border-right: 1px solid #4b42f5;
     height: 200px;
-    
+
 }
 
 /* large screen*/
