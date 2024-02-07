@@ -1,0 +1,21 @@
+
+/* VAGABOND CLUB PAGE */
+/* navigation */
+
+.nav-index {
+    justify-content: left;
+    align-items: center;
+}
+.nav-item {
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESEARCH ANALYSIS vertical line */
+.verticalLine {
+    border-right: 1px solid #4b42f5;
+    height: 200px;
+
+}
+
+
